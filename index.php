@@ -6,7 +6,7 @@
 <body>
 <?php
 
-$conn = new mysqli("","","","");
+$conn = new mysqli("danielharazim_123","Daniel","Danielharazim123","Daniel");
 $sql = "SELECT * FROM pracownicy";
 $wynik = mysqli_query($conn, $sql);
 
