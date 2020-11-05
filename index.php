@@ -5,8 +5,11 @@
 </head>
 <body>
 <?php
-
-$conn = new mysqli("danielharazim_123","Daniel","Danielharazim123","Daniel");
+    $servername = "mysql-danielharazim.alwaysdata.net";
+    $username = "217198";
+    $password = "Danielharazim123";
+    $dbname = "217198";
+$conn = new mysqli("$servername","$username","password","dbname");
 $sql = "SELECT * FROM pracownicy";
 $wynik = mysqli_query($conn, $sql);
 
