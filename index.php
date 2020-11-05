@@ -5,10 +5,10 @@
 </head>
 <body>
 <?php
-    $servername = "464862";
-    $username = "217198";
-    $password = "Danielharazim123";
-    $dbname = "217198";
+    $servername = "sql7.freemysqlhosting.net";
+    $username = "sql7374585";
+    $password = "dDfwp2YyVS";
+    $dbname = "sql7374585";
       echo('</table>');
     if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
