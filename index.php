@@ -5,15 +5,10 @@
 </head>
 <body>
 <?php
-    $servername = "mysql-danielharazim.alwaysdata.net";
+    $servername = "464862";
     $username = "217198";
     $password = "Danielharazim123";
     $dbname = "217198";
-    if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-echo "Connected successfully";
-?>
 $conn = new mysqli("$servername","$username","password","dbname");
 $sql = "SELECT * FROM pracownicy";
 $wynik = mysqli_query($conn, $sql);
@@ -29,7 +24,10 @@ $wynik = mysqli_query($conn, $sql);
     }
 
     echo('</table>');
-
+    if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+echo "Connected successfully";
 
 ?>
 </body>
