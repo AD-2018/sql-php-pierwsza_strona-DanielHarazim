@@ -7,7 +7,7 @@
     <h1>Tabeleczka</h1>
 <?php
     $servername = "sql7.freemysqlhosting.net";
-    $username = "464862";
+    $username = "daniel.harazim123@gmail.com";
     $password = "dDfwp2YyVS";
     $dbname = "sql7374585";
 
