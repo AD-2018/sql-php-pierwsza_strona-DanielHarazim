@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Tabeleczka</h1>
+    <h1>Tabeleczkaaaaa</h1>
 <?php
     $servername = "sql7.freemysqlhosting.net";
     $username = "daniel.harazim123@gmail.com";
