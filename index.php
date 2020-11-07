@@ -6,8 +6,8 @@
 <body>
     <h1>Tabelka</h1>
 <?php
-     $servername = "sql7.freemysqlhosting.net";
-    $username = "sql7374585";
+    $servername = "sql7.freemysqlhosting.net";
+    $username = "464862";
     $password = "dDfwp2YyVS";
     $dbname = "sql7374585";
 
