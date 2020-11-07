@@ -11,7 +11,7 @@
     $password = "dDfwp2YyVS";
     $dbname = "sql7374585";
 
-    $conn = new mysqli("$servername","$username","password","dbname");
+    $conn = new mysqli("$servername","$username","$password","$dbname");
     if ($conn->connect_error) {
        die("Connection failed: " . $conn->connect_error);
      }
