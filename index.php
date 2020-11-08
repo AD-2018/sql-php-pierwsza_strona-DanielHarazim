@@ -16,7 +16,7 @@ $wynik = mysqli_query($conn, $sql);
 
 
     echo('<table border="1">');
-    echo('<th>Imie</th><th>zarobki</th><th>dział</th>);
+    echo('<th>Imie</th><th>zarobki</th><th>dział</th>');
 
     while($wiersz=mysqli_fetch_assoc($wynik)){
         echo('<tr>');
