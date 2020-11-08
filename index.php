@@ -24,6 +24,7 @@ $wynik = mysqli_query($conn, $sql);
         echo('<tr>');
         echo('<td>'.$wiersz['imie'].'</td>'.'<td>'.$wiersz['zarobki'].'</td>'.'<td>'.$wiersz['dział'].'</td>');
         echo('</tr>');
+      echo "INSERT INTO pracownicy (Imie,zarobki,dział) Values('Dawid','2900','2')";
     }
     
 
