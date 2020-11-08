@@ -14,14 +14,7 @@ $conn = new mysqli("$servername","$username","$password","$dbname");
 $sql = "SELECT * FROM pracownicy";
 $wynik = mysqli_query($conn, $sql);
   
-$sql = "INSERT INTO pracownicy ($imie, $zarobki, $dział)
-VALUES ('John', 'Doe', 'john@example.com');";
-  
-$sql .= "INSERT INTO pracownicy ($Imie, $zarobki, $dział)
-VALUES ('Mary', 'Moe', 'mary@example.com');";
-  
-$sql .= "INSERT INTO pracownicy ($Imie, $zarobki, $dział)
-VALUES ('Julie', 'Dooley', 'julie@example.com')";  
+
 
 
     echo('<table border="1">');
@@ -33,6 +26,14 @@ VALUES ('Julie', 'Dooley', 'julie@example.com')";
         echo('</tr>');
     
     }
+$sql = "INSERT INTO pracownicy ($imie, $zarobki, $dział)
+VALUES ('John', 'Doe', 'john@example.com');";
+  
+$sql .= "INSERT INTO pracownicy ($Imie, $zarobki, $dział)
+VALUES ('Mary', 'Moe', 'mary@example.com');";
+  
+$sql .= "INSERT INTO pracownicy ($Imie, $zarobki, $dział)
+VALUES ('Julie', 'Dooley', 'julie@example.com')";  
 
     echo('</table>');
 
