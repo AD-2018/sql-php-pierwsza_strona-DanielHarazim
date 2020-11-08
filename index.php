@@ -23,7 +23,7 @@ $wynik = mysqli_query($conn, $sql);
     while($wiersz=mysqli_fetch_assoc($wynik)){
         echo('<tr>');
         echo('<td>'.$wiersz['imie'].'</td>'.'<td>'.$wiersz['zarobki'].'</td>'.'<td>'.$wiersz['dział'].'</td>');
-        echo('</tr>'):
+        echo('</tr>');
     }
     echo('</table>');
 
