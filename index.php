@@ -2,6 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="style.css">
+  <h1>Pracownicy</h1>
 </head>
 <body>
 <?php
