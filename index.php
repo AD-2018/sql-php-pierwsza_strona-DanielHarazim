@@ -1,8 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+  <h1>Pracownicy</h1>
+</head>
+<body>
 <?php
-$servername = "localhost";
-$username = "username";
-$password = "password";
-$dbname = "myDB";
+
+
+  $servername = "sql7.freemysqlhosting.net";
+  $username = "sql7374585";
+  $password = "dDfwp2YyVS";
+  $dbname = "sql7374585";
+
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
