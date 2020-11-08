@@ -6,29 +6,30 @@
 </head>
 <body>
 <?php
-
-
   $servername = "sql7.freemysqlhosting.net";
   $username = "sql7374585";
   $password = "dDfwp2YyVS";
   $dbname = "sql7374585";
+$conn = new mysqli("$servername","$username","$password","$dbname");
+$sql = "SELECT * FROM pracownicy";
+$wynik = mysqli_query($conn, $sql);
+  
 
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
 
-$sql = "INSERT INTO MyGuests (firstname, lastname, email)
-VALUES ('John', 'Doe', 'john@example.com')";
+    echo('<table border="1">');
+    echo('<th>Imie</th><th>zarobki</th><th>dział</th>');
 
-if ($conn->query($sql) === TRUE) {
-  echo "New record created successfully";
-} else {
-  echo "Error: " . $sql . "<br>" . $conn->error;
-}
+    while($wiersz=mysqli_fetch_assoc($wynik)){
+        echo('<tr>');
+        echo('<td>'.$wiersz['imie'].'</td>'.'<td>'.$wiersz['zarobki'].'</td>'.'<td>'.$wiersz['dział'].'</td>');
+        echo('</tr>');
+    
 
-$conn->close();
+
+    echo('</table>');
+
+
 ?>
+</body>
+</html>
