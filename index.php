@@ -19,7 +19,7 @@ $wynik = mysqli_query($conn, $sql);
 
     while($wiersz=mysqli_fetch_assoc($wynik)){
         echo('<tr>');
-        echo('<td>'.$wiersz['imie'].'</td>'.'<td>'.$wiersz['zarobki'].'</td>');
+        echo('<td>'.$wiersz['imie'].'</td>'.'<td>'.$wiersz['zarobki'].'</td>'.'<td>'.$wiersz['dział'].'</td>'.'<td>'.$wiersz['data_urodzenia'].'</td>');
         echo('</tr>');
     }
 
