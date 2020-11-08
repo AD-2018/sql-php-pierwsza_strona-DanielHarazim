@@ -23,8 +23,6 @@ $wynik = mysqli_query($conn, $sql);
         echo('<td>'.$wiersz['imie'].'</td>'.'<td>'.$wiersz['zarobki'].'</td>'.'<td>'.$wiersz['dział'].'</td>'.'<td>'.$wiersz['data_urodzenia'].'</td>');
         echo('</tr>');
     
-    $sql = "INSERT INTO pracownicy (imie, zarobki, dział, data_urodzenia)
-    VALUES ('Dawid', '2900', '3','1991)"
     }
 
     echo('</table>');
