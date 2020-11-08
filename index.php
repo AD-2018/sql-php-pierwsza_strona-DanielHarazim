@@ -16,11 +16,11 @@ $wynik = mysqli_query($conn, $sql);
 
 
     echo('<table border="1">');
-    echo('<th>Imie</th><th>zarobki</th><th>dział</th><th>data_urodzenia</th>');
+    echo('<th>Imie</th><th>zarobki</th><th>dział</th>);
 
     while($wiersz=mysqli_fetch_assoc($wynik)){
         echo('<tr>');
-        echo('<td>'.$wiersz['imie'].'</td>'.'<td>'.$wiersz['zarobki'].'</td>'.'<td>'.$wiersz['dział'].'</td>'.'<td>'.$wiersz['data_urodzenia'].'</td>');
+        echo('<td>'.$wiersz['imie'].'</td>'.'<td>'.$wiersz['zarobki'].'</td>'.'<td>'.$wiersz['dział'].'</td>');
         echo('</tr>');
     
     }
