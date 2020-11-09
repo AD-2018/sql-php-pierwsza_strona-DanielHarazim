@@ -17,7 +17,7 @@ h1   {color: red;}
 $conn = new mysqli("$servername","$username","$password","$dbname");
   
   
-$sql = "SELECT * FORM pracownicy"
+$sql = ("SELECT * FORM pracownicy");
 $wynik = mysqli_query($conn, $sql);
   
  
