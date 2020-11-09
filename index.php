@@ -17,8 +17,8 @@ h1   {color: red;}
 $conn = new mysqli("$servername","$username","$password","$dbname");
   
   
-$sql = "INSERT INTO MyGuests (imie, zarobki, dział)
-VALUES ('John', 'Doe', 'john@example.com')";
+$sql = INSERT INTO MyGuests (imie, zarobki, dział)
+VALUES ('John', 'Doe', 'john@example.com');
   
 $wynik = mysqli_query($conn, $sql);
   
