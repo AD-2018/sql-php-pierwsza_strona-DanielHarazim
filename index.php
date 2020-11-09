@@ -5,8 +5,7 @@
   <h1>Pracownicy</h1>
   <style>
 body {background-color: powderblue;}
-h1   {color: blue;}
-p    {color: red;}
+h1   {color: red;}
 </style>
 </head>
 <body>
