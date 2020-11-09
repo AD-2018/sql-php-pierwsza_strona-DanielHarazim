@@ -15,11 +15,20 @@ h1   {color: red;}
   $password = "dDfwp2YyVS";
   $dbname = "sql7374585";
 $conn = new mysqli("$servername","$username","$password","$dbname");
+  $sql = "INSERT INTO pracownicy (imie, zarobki, dział)
+VALUES ('John', 'Doe', 'john@example.com');";
+  
+$sql .= "INSERT INTO pracownicy (imie, zarobki,dział)
+VALUES ('Mary', 'Moe', 'mary@example.com');";
+  
+$sql .= "INSERT INTO pracownicy (imie, zarobki, dział)
+VALUES ('Julie', 'Dooley', 'julie@example.com')";
+  
 $sql = "SELECT * FROM pracownicy";
+  
 $wynik = mysqli_query($conn, $sql);
   
-
-
+ 
 
     echo('<table border="1">');
     echo('<th>Imie</th><th>zarobki</th><th>dział</th>');
