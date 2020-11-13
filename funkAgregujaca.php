@@ -12,7 +12,7 @@
     <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-DanielHarazim">github</a>
     <br>
     <a href="index.php">Pracownicy</a>
-    <a href="pracownicyiorganizacja.php">Organizacja i Pracownicy</a>
+    <a href="pracownnicyiorganizacja.php">Organizacja i Pracownicy</a>
 </body>
 </html>
 <?php
