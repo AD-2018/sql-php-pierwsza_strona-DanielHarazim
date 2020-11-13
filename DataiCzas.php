@@ -13,7 +13,7 @@
 
 <?php
 require_once("connect.php");
-echo("<h1>Michael Musiol nr.8</h1>");
+echo("<h1>Daniel Harazim</h1>");
 
 echo("<h3>Zad.1</h3>");
 $sql = "select * ,year(curdate())-year(data_urodzenia) as wiek from pracownicy";
