@@ -1,37 +1,23 @@
+  
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<link rel="stylesheet" href="style.css">
-  <h1>Pracownicy</h1>
-  <style>
-body {background-color: powderblue;}
-h1   {color: red;}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>Daniel Harazim nr1</h1>
+    <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-DanielHarazim">github</a>
+    <br>
+    <a href="pracownicyiorganizacja.php">Organizacja i Pracownicy</a>
+    <a href="funkAgregujaca.php">Funkcje agregujące</a>
+</body>
+</html>
 <?php
-  $servername = "sql7.freemysqlhosting.net";
-  $username = "sql7374585";
-  $password = "dDfwp2YyVS";
-  $dbname = "sql7374585";
-$conn = new mysqli("$servername","$username","$password","$dbname");
-  
-  
-$sql = ("SELECT * FORM pracownicy");
-$wynik = mysqli_query($conn, $sql);
-  
- 
+require_once("connect.php");
 
-    echo('<table border="1">');
-    echo('<th>Imie</th><th>zarobki</th><th>dział</th>');
-  
-    
-    while($wiersz=mysqli_fetch_assoc($wynik)){
-        echo('<tr>');
-        echo('<td>'.$wiersz['imie'].'</td>'.'<td>'.$wiersz['zarobki'].'</td>'.'<td>'.$wiersz['dział'].'</td>');
-        echo('</tr>');
-    }
-    echo('</table>');
 
 
 ?>
