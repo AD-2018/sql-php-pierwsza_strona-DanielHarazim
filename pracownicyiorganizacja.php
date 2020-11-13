@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Jakub Erfurtz nr1</h1>
+    <h1>Daniel Harazim</h1>
     <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-DanielHarazim">github</a>
     <br>
     <a href="index.php">Pracownicy</a>
