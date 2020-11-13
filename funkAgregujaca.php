@@ -11,7 +11,7 @@
     <a href="funkAgregujaca.php">Funkcje Agregujace</a>
     
 <?php
-require_once("lib.php");
+require_once("connect.php");
 echo("<h1>Daniel Harazim</h1>");
 
 echo("<h3>Zad.1</h3><br/>");
