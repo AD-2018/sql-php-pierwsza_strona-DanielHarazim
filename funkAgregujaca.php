@@ -10,6 +10,7 @@
     <a href="pracownicyiorganizacja.php">Organizacja Pracownicy</a>
     <a href="funkAgregujaca.php">Funkcje Agregujace</a>
      <a href="formularz.html">Formularz</a>
+    <a href="danedobazy.html">Dane do bazy</a>
     
 <?php
 require_once("connect.php");
