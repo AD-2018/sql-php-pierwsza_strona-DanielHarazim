@@ -1,37 +1,17 @@
-body {
-  background-color: orange;
-}
-
-table {
-  border-collapse: black;
-}
-
-th {
-  height: 70px;
-}
-td {
-  text-align: center;
-}
-th {
-  text-align: center;
-}
-
 table, th, td {
   text-align: center;
   border: 1px solid black;
 }
-
 table {
   border-collapse: collapse;
   width: 35%;
-  
-tr:nth-child(even) {background-color: yellow;}
+}
 th {
-  background-color: black;
-  color: white;
+  background-color: #1E90FF;
+  height: 35px;
 }
-<h1>
-{
-  color: red;
+td {
+height: 25px;
 }
-</h1>
+tr:hover {background-color: #ddd;}
+tr:nth-child(even){background-color: #f2f2f2;
