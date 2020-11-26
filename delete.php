@@ -1,11 +1,7 @@
 <?php
-echo("Delete<br>");
-echo $_POST['id'];
+echo $_POST['id_pracownicy'];
 
-$servername = "mysql-danielharazim.alwaysdata.net";
-$username = "217198_daniel";
-$password = "Gwiazda20024";
-$dbname = "danielharazim_123";
+require "connect.php";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
@@ -13,13 +9,12 @@ if ($conn->connect_error) {
 }
 
 
-$sql = "DELETE FROM Pracownik WHERE id= $_POST['id'];";
-
+$sql = "DELETE FROM pracownicy WHERE id_pracownicy=".$_POST['id_pracownicy'];
 
 echo $sql;
 
 if ($conn->query($sql) === TRUE) {
-  echo "New record created successfully";
+  echo "<br>Record deleted successfully";
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
