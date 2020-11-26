@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <a href="index.php">strona główna</a>
     <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-DanielHarazim">Github</a>
     <a href="index.php">Strona główna</a>
     <a href="pracownicyiorganizacja.php">Organizacja Pracownicy</a>
