@@ -1,3 +1,6 @@
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
 <?php
 echo("jestes w insert.php");
 echo "<li>".$_POST['imie'];
