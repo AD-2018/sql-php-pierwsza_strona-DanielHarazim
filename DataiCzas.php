@@ -10,6 +10,7 @@
     <a href="funkAgregujaca.php">Funkcje Agregujace</a>
     <a href="DataiCzas.php">Data i Czas</a>
      <a href="formularz.html">Formularz</a>
+    <a href="danedobazy.html">Dane do bazdy</a>
     
 
 <?php
