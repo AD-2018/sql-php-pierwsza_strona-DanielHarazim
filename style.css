@@ -15,6 +15,16 @@ td {
 th {
   text-align: center;
 }
+
+table, th, td {
+  text-align: center;
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 35%;
+  
 tr:nth-child(even) {background-color: yellow;}
 th {
   background-color: black;
