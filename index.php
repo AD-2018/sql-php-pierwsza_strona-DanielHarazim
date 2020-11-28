@@ -10,7 +10,7 @@
     
 </head>
 <body>
-    <h1>Daniel Harazim</h1>
+    <h1>Bartosz Wilczek</h1>
     <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-DanielHarazim">github</a>
     <br>
     <a href="pracownicyiorganizacja.php">Organizacja i Pracownicy</a>
