@@ -1,5 +1,5 @@
 <body>
-  <a href="index.php">Wróć</a>
+  <a href="danedobazy.php">Wróć</a>
 </body>  
 <?php
 
