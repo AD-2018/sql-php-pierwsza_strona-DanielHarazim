@@ -1,7 +1,8 @@
-<?php
 <body>
   <a href="index.php">Wróć</a>
-  </body>
+</body>  
+<?php
+
 echo $_POST['id_pracownicy'];
 
 require "connect.php";
