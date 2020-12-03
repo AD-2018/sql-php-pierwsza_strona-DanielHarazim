@@ -1,4 +1,7 @@
 <?php
+<body>
+  <a href="index.php">Wróć</a>
+  </body>
 echo $_POST['id_pracownicy'];
 
 require "connect.php";
