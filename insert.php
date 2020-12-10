@@ -1,6 +1,8 @@
 <head>
   <link rel="stylesheet" href="style.css">
 </head>
+<body><a href="index.php">Wróć</a>
+  </body>
 <?php
 echo("jestes w insert.php");
 echo "<li>".$_POST['imie'];
