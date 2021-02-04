@@ -13,7 +13,7 @@
     <br>
     <a href="pracownicy/funkAgregujaca.php">Funkcje agregujące</a>
     <a href="pracownicy/DataiCzas.php">Data i Czas</a>
-     <a href="pracownicy/formularz.html">Formularz</a>
+     <a href="formularz/formularz.html">Formularz</a>
     <a href="pracownicy/danedobazy.html">Dane do bazy</a>
 </body>
 </html>
