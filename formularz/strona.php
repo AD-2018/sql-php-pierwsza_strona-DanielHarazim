@@ -5,13 +5,13 @@
 </head>
 
 <div class = "nav">
-        <a href="formularz/index.php">strona główna</a>
+        <a href="pracownicy/index.php">strona główna</a>
         <br>
-        <a href="formularz/pracownicyiorganizacja.php">pracownicy organizacja</a>
+        <a href="pracownicy/pracownicyiorganizacja.php">pracownicy organizacja</a>
         <br>
-        <a href="formularz/funkAgregujaca.php">Funkcje Agregujace</a>
+        <a href="pracownicy/funkAgregujaca.php">Funkcje Agregujace</a>
         <br>
-        <a href="formularz/dataiczas.php">Data i Czas</a>
+        <a href="pracownicy/dataiczas.php">Data i Czas</a>
         <br>
         <a href="formularz/Formularz.html">Formularze</a>
         <br>
