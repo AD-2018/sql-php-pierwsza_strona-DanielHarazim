@@ -9,7 +9,7 @@
     <a href="pracownicy/index.php">Strona główna</a>
     <a href="pracownicy/pracownicyiorganizacja.php">Organizacja Pracownicy</a>
     <a href="pracownicy/funkAgregujaca.php">Funkcje Agregujace</a>
-     <a href="pracownicy/formularz.html">Formularz</a>
+     <a href="formularz/formularz.html">Formularz</a>
     <a href="pracownicy/danedobazy.html">Dane do bazy</a>
     
 <?php
