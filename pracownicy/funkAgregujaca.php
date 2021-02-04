@@ -4,13 +4,13 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a href="pracownicy/index.php">strona główna</a>
+    <a href="/pracownicy/index.php">strona główna</a>
     <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-DanielHarazim">Github</a>
-    <a href="pracownicy/index.php">Strona główna</a>
-    <a href="pracownicy/pracownicyiorganizacja.php">Organizacja Pracownicy</a>
-    <a href="pracownicy/funkAgregujaca.php">Funkcje Agregujace</a>
-     <a href="formularz/formularz.html">Formularz</a>
-    <a href="pracownicy/danedobazy.html">Dane do bazy</a>
+    <a href="/pracownicy/index.php">Strona główna</a>
+    <a href="/pracownicy/pracownicyiorganizacja.php">Organizacja Pracownicy</a>
+    <a href="/pracownicy/funkAgregujaca.php">Funkcje Agregujace</a>
+     <a href="/formularz/formularz.html">Formularz</a>
+    <a href="/pracownicy/danedobazy.html">Dane do bazy</a>
     
 <?php
 require_once("connect.php");
