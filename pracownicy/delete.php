@@ -5,7 +5,7 @@
 
 echo $_POST['id_pracownicy'];
 
-require "connect.php";
+require "/pracownicy/connect.php";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
