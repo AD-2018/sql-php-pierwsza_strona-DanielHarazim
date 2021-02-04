@@ -4,14 +4,14 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a href="index.php">strona główna</a>
+    <a href="pracownicy/index.php">strona główna</a>
     <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-DanielHarazim">Github</a>
-    <a href="index.php">Pracownicy</a>
-    <a href="pracownicyiorganizacja.php">Organizacja Pracownicy</a>
-    <a href="funkAgregujaca.php">Funkcje Agregujace</a>
-    <a href="DataiCzas.php">Data i Czas</a>
-     <a href="formularz.html">Formularz</a>
-    <a href="danedobazy.html">Dane do bazy</a>
+    <a href="pracownicy/index.php">Pracownicy</a>
+    <a href="pracownicy/pracownicyiorganizacja.php">Organizacja Pracownicy</a>
+    <a href="pracownicy/funkAgregujaca.php">Funkcje Agregujace</a>
+    <a href="pracownicy/DataiCzas.php">Data i Czas</a>
+     <a href="pracownicy/formularz.html">Formularz</a>
+    <a href="pracownicy/danedobazy.html">Dane do bazy</a>
     
 
 <?php
