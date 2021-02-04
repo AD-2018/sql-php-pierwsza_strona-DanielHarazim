@@ -13,7 +13,7 @@
     <a href="/pracownicy/danedobazy.html">Dane do bazy</a>
     
 <?php
-require_once("connect.php");
+require_once("/pracownicy/connect.php");
 echo("<h1>Daniel Harazim</h1>");
 
 echo("<h3>Zad.1</h3><br/>");
