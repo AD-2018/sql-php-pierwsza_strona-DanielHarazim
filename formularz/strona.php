@@ -5,17 +5,17 @@
 </head>
 
 <div class = "nav">
-        <a href="index.php">strona główna</a>
+        <a href="formularz/index.php">strona główna</a>
         <br>
-        <a href="pracownicyiorganizacja.php">pracownicy organizacja</a>
+        <a href="formularz/pracownicyiorganizacja.php">pracownicy organizacja</a>
         <br>
-        <a href="funkAgregujaca.php">Funkcje Agregujace</a>
+        <a href="formularz/funkAgregujaca.php">Funkcje Agregujace</a>
         <br>
-        <a href="dataiczas.php">Data i Czas</a>
+        <a href="formularz/dataiczas.php">Data i Czas</a>
         <br>
-        <a href="Formularz.html">Formularze</a>
+        <a href="formularz/Formularz.html">Formularze</a>
         <br>
-        <a href="strona.php">Strona Formularza</a>
+        <a href="formularz/strona.php">Strona Formularza</a>
     </div>
 
 
