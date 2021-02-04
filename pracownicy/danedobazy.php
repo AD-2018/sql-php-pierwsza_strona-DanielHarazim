@@ -16,7 +16,7 @@
 		<li><a href="pracownicy/pracownicyiorganizacja.php">Pracownicy i Organizacja</a></li>
                 <li><a href="pracownicy/funkAgregujaca.php">Funkcję Agregujące</a></li>
                 <li><a href="pracownicy/DataiCzas.php">Data i Czas</a></li>
-                <li><a href="pracownicy/formularz.html">Formularz</a></li>
+                <li><a href="formularz/formularz.html">Formularz</a></li>
 </ul>
 </nav>
 	                Dodawanie Pracownika<br>
