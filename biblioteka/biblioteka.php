@@ -44,7 +44,7 @@ echo('<select name="Autor">');
     }
 echo('</select>');
 
-$sql = "SELECT * FROM biblioteka2";
+$sql = "SELECT autor FROM biblioteka2";
 echo("<h3>Książki</h3>");
 echo("<li>".$sql."<br><br>");
 
