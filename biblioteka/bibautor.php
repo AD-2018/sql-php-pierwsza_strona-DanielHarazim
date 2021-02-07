@@ -2,9 +2,9 @@
 echo("bibautor.php");
 echo "<li>".$_POST['autor'];
 
-require_once("../connect.php");
+require_once("connect.php");
 
-$sql = "INSERT INTO biblioteka2 (autor) 
+$sql = "INSERT INTO biblioteka2 (id_autora, autor) 
        VALUES (null, '".$_POST['autor']."')";
 
 if ($conn->query($sql) === TRUE) {
