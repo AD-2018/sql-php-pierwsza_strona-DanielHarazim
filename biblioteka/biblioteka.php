@@ -36,7 +36,7 @@ echo ("<li>".$sql);
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
 echo('<label for="bibl_autor">Wybierz autora: </label>');	
-echo('<select name="autor">');
+echo('<select name="Autor">');
     while($row=mysqli_fetch_assoc($result)){
         echo('<option value="'.$row['id_autor'].'">');
         echo($row['autor']);
@@ -64,7 +64,7 @@ echo('<select name="tytul">');
     }
 echo('</select>');
 	
-$sql = "SELECT * FROM bibl_book";
+$sql = "SELECT * FROM biblioteka2";
 echo("<h3>Powiązania</h3>");
 echo("<li>".$sql."<br><br>");
 
@@ -75,7 +75,7 @@ $result = mysqli_query($conn, $sql);
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
 
-echo('<table border="1" class="tabelka_moja">');
+echo('<table border="1" class="tabela">');
 echo ("<tr><th>id_book</th><th>id_autor</th><th>id_tytul</th><th>wypozyczenia</th></tr>");
 while($row = mysqli_fetch_assoc($result)) {
     echo ('<tr>');
@@ -84,7 +84,7 @@ while($row = mysqli_fetch_assoc($result)) {
 }
 echo ('</table>');
 	
-$sql = "SELECT autor, tytul FROM biblioteka2, bibl_book, bibl_autor WHERE bibl_tytul.id_tytul=bibl_book.id_tytul AND bibl_autor.id_autor=bibl_book.id_autor";
+$sql = "SELECT autor, tytul FROM biblioteka2, tytul, autor WHERE tytul.id_tytul=tytul.id_tytul AND autor.id_autora=tytul.id_autora";
 echo("<h3>AUTORZY I KSIĄŻKI</h3>");
 echo("<li>".$sql."<br><br>");
 
@@ -95,7 +95,7 @@ $result = mysqli_query($conn, $sql);
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
 
-echo('<table border="1" class="tabelka_moja">');
+echo('<table border="1" class="tabela">');
 echo ("<tr><th>autor</th><th>tytul</th></tr>");
 while($row = mysqli_fetch_assoc($result)) {
     echo ('<tr>');
