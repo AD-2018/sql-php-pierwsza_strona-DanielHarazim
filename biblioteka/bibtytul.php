@@ -2,7 +2,7 @@
 echo("bibtytul.php");
 echo "<li>".$_POST['tytul'];
 
-require_once("../connect.php");
+require_once("/connect.php");
 
 $sql = "INSERT INTO bibl_tytul (id_tytul, tytul) 
        VALUES (null, '".$_POST['tytul']."')";
