@@ -10,7 +10,7 @@
 	<div class="container">
 <div class="menu blue">
 <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-DanielHarazim">Github </a>
-	<a href="index.php">Strona Główna </a>
+	<a href="/pracownicy/index.php">Strona Główna </a>
 </div>
 	<div class="tresc green">
   <h3>Dodawanie Autora</h3>
