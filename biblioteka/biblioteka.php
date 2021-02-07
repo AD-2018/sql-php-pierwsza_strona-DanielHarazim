@@ -84,7 +84,7 @@ while($row = mysqli_fetch_assoc($result)) {
 }
 echo ('</table>');
 	
-$sql = "SELECT autor, tytul FROM biblioteka2, tytul, autor WHERE tytul.id_tytul=tytul.id_tytul AND autor.id_autora=tytul.id_autora";
+$sql = "SELECT autor, tytul FROM biblioteka2";
 echo("<h3>AUTORZY I KSIĄŻKI</h3>");
 echo("<li>".$sql."<br><br>");
 
