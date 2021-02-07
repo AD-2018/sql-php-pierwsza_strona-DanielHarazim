@@ -14,12 +14,12 @@
 </div>
 	<div class="tresc green">
   <h3>Dodawanie Autora</h3>
-	<form action="/biblioteka/insertautor.php" method="POST">
+	<form action="/biblioteka/bibautor.php" method="POST">
 		<label>Autor</label><input type="text" name="autor"></br>
 		<input type="submit" value="Dodaj Autora">
 	</form>
   <h3>Dodawanie Tytułu</h3>
-	<form action="/biblioteka/inserttytul.php" method="POST">
+	<form action="/biblioteka/bibtytul.php" method="POST">
 		<label>Tytul</label><input type="text" name="tytul"></br>
 		<input type="submit" value="Dodaj Tytul">
 	</form>
