@@ -18,6 +18,7 @@
   <a href="/pracownicy/DataiCzas.php">Data i Czas</a>
   <a href="/formularz/formularz.html">Formularz</a>
     <a href="/pracownicy/danedobazy.html">Dane do bazy</a>
+  <a href="/biblioteka/biblioteka.php">Biblioteka</a>
 </body>
 </html>
 <?php
