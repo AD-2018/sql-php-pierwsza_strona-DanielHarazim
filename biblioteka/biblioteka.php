@@ -3,16 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dawid Bączkiewicz</title>
-    <link rel="stylesheet" href="../assets/styles.css">
-    <link rel="icon" 
-      type="image/png" 
-      href="../img/favicon.ico">
+    <title>Daniel Harazim</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div class="container">
         <div class="tytul">
-            <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-BaczkiewiczDawid" class="github-link">github</a>
+            <a href="https://php-harazim.herokuapp.com/biblioteka/biblioteka.php" class="github-link">github</a>
             <div class="imie">
                 <h1 class="name">Dawid Bączkiewicz nr1</h1>
             </div>
