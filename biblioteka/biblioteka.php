@@ -48,7 +48,7 @@
 </form>
 
 <?php
-require_once("../connect.php");
+require_once("/connect.php");
   
   echo ("<br>Autorzy<br>");
 $sql = "SELECT * FROM bibl_autor";
