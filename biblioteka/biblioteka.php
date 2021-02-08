@@ -1,33 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" href="/style.css">
-  <title>Daniel Harazim</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dawid Bączkiewicz</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+    <link rel="icon" 
+      type="image/png" 
+      href="../img/favicon.ico">
 </head>
 <body>
-	<div class="container">
-<div class="menu blue">
-<a href="https://github.com/AD-2018/sql-php-pierwsza_strona-DanielHarazim">Github </a>
-	<a href="/pracownicy/index.php">Strona Główna </a>
-</div>
-	
+<div class="container">
+        <div class="tytul">
+            <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-BaczkiewiczDawid" class="github-link">github</a>
+            <div class="imie">
+                <h1 class="name">Dawid Bączkiewicz nr1</h1>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+    <div class="nav">
+        <a href="../index.php">Pracownicy</a><br>
+        <a href="../pracownicy/funkAgregujaca.php">Funkcje agregujące</a><br>
+        <a href="../pracownicy/orgPracownicy.php">Organizacja i pracownicy</a><br>
+        <a href="../pracownicy/dataczas.php">Data i czas</a><br>
+        <a href="../pracownicy/formularz.html">Formularz</a><br>
+        <a href="../pracownicy/danedobazy.php">Dane do bazy</a><br>
+        <a href="ksiazki.php">Ksiazki</a><br>
+        <a href="../flexbox/flexbox.html">Flexbox</a><br>
+        </div>
+        <div class="strona">
+        <form action="insert-autor.php" method="POST" class="form">
+	        <input type="text" name="autor" placeholder="Autor"><br>
+            <input type="submit" value ="Dodaj Autora">
+    </form>
+    <form action="insert-tytul.php" method="POST" class="form">
+	        <input type="text" name="tytul" placeholder="Tytuł"><br>
+            <input type="submit" value ="Dodaj Tytuł">
+</form>
+    <br>
+    <br>
+        <?php
+require_once("../assets/connect.php");
 
-<?php
-require_once ("../connect.php");
+$sql = "SELECT * FROM biblAutor";
 
-$sql = "SELECT autor FROM biblioteka2";
-echo ("<h3>Autorzy</h3>");
-echo ("<li>".$sql);
-  $result = mysqli_query($conn, $sql);
-    if ( $result) {
-        echo "<li>ok</br>";
-    } else {
-      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-    }
-echo('<label for="bibl_autor">Wybierz autora: </label>');	
-echo('<select name="Autor">');
+$result = mysqli_query($conn, $sql);
+
+echo('<select name="autor">');
     while($row=mysqli_fetch_assoc($result)){
         echo('<option value="'.$row['id_autor'].'">');
         echo($row['autor']);
@@ -35,18 +55,10 @@ echo('<select name="Autor">');
     }
 echo('</select>');
 
-$sql = "SELECT tytul FROM biblioteka2";
-echo("<h3>Książki</h3>");
-echo("<li>".$sql."<br><br>");
+$sql = "SELECT * FROM biblTytul";
 
 $result = mysqli_query($conn, $sql);
-     if ( $result) {
-        echo "<li>ok</br>";
-    } else {
-      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-    }
 
-echo('<label for="bibl_tytul">Wybierz tytuł: </label>');	
 echo('<select name="tytul">');
     while($row=mysqli_fetch_assoc($result)){
         echo('<option value="'.$row['id_tytul'].'">');
@@ -55,29 +67,78 @@ echo('<select name="tytul">');
     }
 echo('</select>');
 
-echo ('</table>');
-	
-$sql = "SELECT autor, tytul FROM biblioteka2";
-echo("<h3>AUTORZY I KSIĄŻKI</h3>");
-echo("<li>".$sql."<br><br>");
+$sql = "SELECT * FROM biblAutor";
 
 $result = mysqli_query($conn, $sql);
-     if ( $result) {
-        echo "<li>ok";
-    } else {
-      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-    }
 
-echo('<table border="1" class="tabela">');
-echo ("<tr><th>autor</th><th>tytul</th></tr>");
-while($row = mysqli_fetch_assoc($result)) {
-    echo ('<tr>');
-    echo ("<td>".$row['autor']."</td><td>".$row['tytul']."</td>");
-    echo ('</tr>');
-}
-echo ('</table>');
+echo("<h1>BiblAutor</h1>");
+echo("<h2>".$sql."</h2>");
+
+echo("<table border='1'>");
+echo("<th>ID</th><th>Autor</th>");
+    while($row = mysqli_fetch_assoc($result)) {
+        echo("<tr>");
+        echo("<td>".$row['id']."</td><td>".$row['autor']."</td>");
+        echo("</tr>");
+    };
+echo("</table>");
+
+//--------------------------------------------------------------------
+
+$sql = "SELECT * FROM biblTytul";
+
+$result = mysqli_query($conn, $sql);
+
+echo("<h1>BiblTytul</h1>");
+echo("<h2>".$sql."</h2>");
+
+echo("<table border='1'>");
+echo("<th>ID</th><th>Tytul</th>");
+    while($row = mysqli_fetch_assoc($result)) {
+        echo("<tr>");
+        echo("<td>".$row['id']."</td><td>".$row['tytul']."</td>");
+        echo("</tr>");
+    };
+echo("</table>");
+
+//--------------------------------------------------------------------
+
+$sql = "SELECT * FROM biblAutor_biblTytul";
+
+$result = mysqli_query($conn, $sql);
+
+echo("<h1>BiblAutor_biblTytul</h1>");
+echo("<h2>".$sql."</h2>");
+
+echo("<table border='1'>");
+echo("<th>ID</th><th>biblAutor_id</th><th>biblTytul_id</th><td>biblWypoz</td>");
+    while($row = mysqli_fetch_assoc($result)) {
+        echo("<tr>");
+        echo("<td>".$row['id']."</td><td>".$row['biblAutor_id']."</td><td>".$row['biblTytul_id']."</td><td>".$row['biblWypoz']."</td>");
+        echo("</tr>");
+    };
+echo("</table>");
+
+//--------------------------------------------------------------------
+
+$sql = "SELECT * FROM biblTytul, biblAutor WHERE biblTytul.id = biblAutor.id";
+
+$result = mysqli_query($conn, $sql);
+
+echo("<h1>BiblAutor_biblTytul</h1>");
+echo("<h2>".$sql."</h2>");
+
+echo("<table border='1'>");
+echo("<th>ID</th><th>Autor</th><th>biblTytul</th>");
+    while($row = mysqli_fetch_assoc($result)) {
+        echo("<tr>");
+        echo("<td>".$row['id']."</td><td>".$row['autor']."</td><td>".$row['tytul']."</td>");
+        echo("</tr>");
+    };
+echo("</table>");
 ?>
-	</div>
-	</div>
+        </div>
+    </div>
 </body>
 </html>
+© 2021 GitHub, Inc.
