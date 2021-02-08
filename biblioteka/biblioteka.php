@@ -72,8 +72,8 @@ echo ('</table>');
 	echo('</select>');
 echo ('</table>');
 	
-$sql = "SELECT * from bibl_tytul";
-echo("<h3>AUTORZY I KSIĄŻKI</h3>");
+$sql = "SELECT * FROM bibl_tytul";
+echo("<h3>TYTUŁ</h3>");
 echo("<li>".$sql."<br><br>");
 $result = mysqli_query($conn, $sql);
      if ( $result) {
