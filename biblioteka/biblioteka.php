@@ -12,17 +12,7 @@
 <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-DanielHarazim">Github </a>
 	<a href="/pracownicy/index.php">Strona Główna </a>
 </div>
-	<div class="tresc green">
-  <h3>Dodawanie Autora</h3>
-	<form action="/biblioteka/bibautor.php" method="POST">
-		<label>Autor</label><input type="text" name="autor"></br>
-		<input type="submit" value="Dodaj Autora">
-	</form>
-  <h3>Dodawanie Tytułu</h3>
-	<form action="/biblioteka/bibtytul.php" method="POST">
-		<label>Tytul</label><input type="text" name="tytul"></br>
-		<input type="submit" value="Dodaj Tytul">
-	</form>
+	
 
 <?php
 require_once ("../connect.php");
