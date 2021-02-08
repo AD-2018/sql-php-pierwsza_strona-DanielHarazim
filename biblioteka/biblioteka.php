@@ -72,7 +72,7 @@ echo ('</table>');
 	echo('</select>');
 echo ('</table>');
 	
-$sql = "SELECT * FROM bibl_tytul";
+$sql = "SELECT id,Tytul FROM bibl_tytul";
 echo("<h3>TYTUŁ</h3>");
 echo("<li>".$sql."<br><br>");
 $result = mysqli_query($conn, $sql);
