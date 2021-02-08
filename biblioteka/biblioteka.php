@@ -38,9 +38,9 @@
     <br>
     <br>
         <?php
-require_once("../assets/connect.php");
+require_once("connect.php");
 
-$sql = "SELECT * FROM biblAutor";
+$sql = "SELECT * FROM biblz_autor";
 
 $result = mysqli_query($conn, $sql);
 
@@ -52,7 +52,7 @@ echo('<select name="autor">');
     }
 echo('</select>');
 
-$sql = "SELECT * FROM biblTytul";
+$sql = "SELECT * FROM bibl_tytul";
 
 $result = mysqli_query($conn, $sql);
 
@@ -64,7 +64,7 @@ echo('<select name="tytul">');
     }
 echo('</select>');
 
-$sql = "SELECT * FROM biblAutor";
+$sql = "SELECT * FROM bibl_autor";
 
 $result = mysqli_query($conn, $sql);
 
@@ -82,7 +82,7 @@ echo("</table>");
 
 //--------------------------------------------------------------------
 
-$sql = "SELECT * FROM biblTytul";
+$sql = "SELECT * FROM bibl_tytul";
 
 $result = mysqli_query($conn, $sql);
 
@@ -117,8 +117,8 @@ echo("<th>ID</th><th>biblAutor_id</th><th>biblTytul_id</th><td>biblWypoz</td>");
 echo("</table>");
 
 //--------------------------------------------------------------------
-
-$sql = "SELECT * FROM biblTytul, biblAutor WHERE biblTytul.id = biblAutor.id";
+		
+$sql = "SELECT * FROM bibl_tytul, bibl_autor WHERE bibl_tytul.id = bibl_autor.id"
 
 $result = mysqli_query($conn, $sql);
 
