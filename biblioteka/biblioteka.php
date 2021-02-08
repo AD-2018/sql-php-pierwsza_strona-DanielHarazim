@@ -69,6 +69,26 @@ while($row = mysqli_fetch_assoc($result)) {
     echo ('</tr>');
 }
 echo ('</table>');
+	echo('</select>');
+echo ('</table>');
+	
+$sql = "SELECT * from bibl_tytul";
+echo("<h3>AUTORZY I KSIĄŻKI</h3>");
+echo("<li>".$sql."<br><br>");
+$result = mysqli_query($conn, $sql);
+     if ( $result) {
+        echo "<li>ok";
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+echo('<table border="1" class="tabela">');
+echo ("<tr><th>autor</th><th>tytul</th></tr>");
+while($row = mysqli_fetch_assoc($result)) {
+    echo ('<tr>');
+    echo ("<td>".$row['autor']."</td><td>".$row['tytul']."</td>");
+    echo ('</tr>');
+}
+echo ('</table>');
 ?>
 	</div>
 	</div>
